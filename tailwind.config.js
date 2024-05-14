@@ -7,11 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      backgroundImage: theme => ({
+        'hunter': "url('/assets/hunter_bg.webp')",
+        'porygon': "url('/assets/porygon_bg.webp')",
+        'monster': "url('/assets/monster_bg.webp')",
+        'muk': "url('/assets/muk_bg.webp')",
+        'ghast': "url('/assets/ghast_bg.webp')",
+        'pokeball': "url('/assets/pokeball_bg.webp')",
+        'poke': "url('/assets/poke_bg.png')",
+      })
     },
   },
   plugins: [],
