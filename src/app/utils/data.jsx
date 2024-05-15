@@ -16,8 +16,7 @@ export const type = {
     ICE: "ICE",
     DRAGON: "DRAGON",
     DARK: "DARK",
-    FAIRY: "FAIRY",
-    // NONE: "NONE",
+    FAIRY: "FAIRY"
 }
 
 const typeColor = {
@@ -39,7 +38,6 @@ const typeColor = {
     [type.DRAGON]: "#6F35FC",
     [type.DARK]: "#705746",
     [type.FAIRY]: "#D685AD",
-    // [type.NONE]: "#68A090",
 }
 
 export function darkenColor(color, percent = 20) {
