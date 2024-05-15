@@ -30,7 +30,6 @@ function SettingsModal({isOpen, onClose, onLanguageChange, onBackgroundChange, c
         >
             <div className="flex justify-end">
                 <button onClick={onClose}>
-                    {/*    X svg*/}
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 rounded-md text-white hover:bg-white/10"
                          fill="none"
                          viewBox="0 0 24 24" stroke="currentColor">
@@ -63,7 +62,7 @@ function SettingsModal({isOpen, onClose, onLanguageChange, onBackgroundChange, c
                 <h3>
                     <FormattedMessage id="background"/>
                 </h3>
-                <div className="flex flex-wrap justify-start gap-1 my-2">
+                <div className="flex flex-wrap justify-items-stretch lg:justify-start gap-2 lg:gap-3 my-2">
                     <BgThumbnail
                         src="/assets/backgrounds/thumbs/poke_bg_thumb.webp"
                         alt="Pokeball"

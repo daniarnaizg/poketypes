@@ -1,4 +1,5 @@
 import {getTypeColor, getTypeIcon} from './utils/data.jsx';
+import {FormattedMessage} from "react-intl";
 import {TypeLabel} from './typeLabel.jsx';
 
 function ResultsArea({selectedTypes, effectiveness}) {
@@ -11,8 +12,8 @@ function ResultsArea({selectedTypes, effectiveness}) {
     if (selectedTypes.length === 0) {
         return (
             <div className="w-full lg:w-[50%] flex justify-center items-center">
-                <div className="text-mg font-semibold lg:text-lg lg:font-bold mb-12">
-                    Please select a type to see the results.
+                <div className="text-mg font-semibold lg:text-lg lg:font-bold text-center mb-4 mt-5 lg:m-0">
+                    <FormattedMessage id="pleaseSelectType"/>
                 </div>
             </div>
         );

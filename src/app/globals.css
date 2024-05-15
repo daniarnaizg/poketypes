@@ -41,47 +41,59 @@ body {
     background-image: url('/assets/backgrounds/poke_bg.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-color: lightslategray;
     background-blend-mode: color-burn;
 }
 
 .hunter {
     background-image: url('/assets/backgrounds/hunter_bg.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-size: contain;
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
     background-color: darkslategray;
     background-blend-mode: soft-light;
 }
 
 .porygon {
     background-image: url('/assets/backgrounds/porygon_bg.webp');
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
 }
 
 .ghast {
     background-image: url('/assets/backgrounds/ghast_bg.webp');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
 }
 
 .monster {
     background-image: url('/assets/backgrounds/monster_bg.webp');
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
 }
 
 .muk {
     background-image: url('/assets/backgrounds/muk_bg.webp');
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
 }
 
 .pokeball {
     background-image: url('/assets/backgrounds/pokeball_bg.webp');
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .hunter,
+    .porygon,
+    .ghast,
+    .monster,
+    .muk,
+    .pokeball {
+        background-attachment: scroll;
+    }
 }
