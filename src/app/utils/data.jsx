@@ -42,9 +42,9 @@ const typeColor = {
     // [type.NONE]: "#68A090",
 }
 
-export function darkenColor(color, percent = -20) {
+export function darkenColor(color, percent = 20) {
     const num = parseInt(color.replace("#",""), 16),
-        amt = Math.round(2.55 * percent),
+        amt = Math.round(2.55 * -(percent)),
         R = (num >> 16) + amt,
         G = (num >> 8 & 0x00FF) + amt,
         B = (num & 0x0000FF) + amt;
@@ -79,7 +79,6 @@ export const getTypeIcon = (type) => {
 
 // function to get the effectiveness of one or two types:
 export const getEffectiveness = (type1, type2 = type.NONE) => {
-    console.log(type1, type2)
     const index1 = Object.values(type).indexOf(type1);
     const index2 = Object.values(type).indexOf(type2);
     return rawData[index1][index2];

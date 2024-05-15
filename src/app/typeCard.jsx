@@ -11,7 +11,7 @@ function TypeCard(props) {
             style={{backgroundImage: `linear-gradient(to right, ${color}, ${darkerColor})`, position: 'relative', overflow: 'hidden'}}
             onClick={onSelect}
         >
-            <div className="flex items-center justify-center ms-3">
+            <div className="flex items-center justify-center font-semibold lg:font-bold ms-3">
                 <p>{type}</p>
             </div>
             <div className="absolute opacity-50 right-[-40px] top-[-20px] lg:right-[-25px] lg:top-[0px]">

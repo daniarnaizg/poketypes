@@ -11,6 +11,8 @@ export default function Home() {
     useEffect(() => {
         if (selectedTypes.length > 0) {
             setEffectiveness(getEffectivenessAgainstSelectedTypes(selectedTypes));
+        } else {
+            setEffectiveness({}); // Reset effectiveness when no types are selected
         }
     }, [selectedTypes]);
 

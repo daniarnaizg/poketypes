@@ -29,7 +29,8 @@ function TypesArea({selectedTypes, setSelectedTypes}) {
                 ) : (
                     <TypeLabel
                         type="No type selected"
-                        color="gray"
+                        color="SlateGrey"
+                        darken_pct={-30}
                     />
                 )}
             </div>

@@ -1,4 +1,4 @@
-import {type as types, getTypeColor, getTypeIcon} from './utils/data.jsx';
+import {getTypeColor, getTypeIcon} from './utils/data.jsx';
 import {TypeLabel} from './typeLabel.jsx';
 
 function ResultsArea({selectedTypes, effectiveness}) {
@@ -7,8 +7,18 @@ function ResultsArea({selectedTypes, effectiveness}) {
     const effectivenessEntries = Object.entries(effectiveness);
     const sortedEffectiveness = effectivenessEntries.sort(([keyA], [keyB]) => keyB - keyA);
 
-    return (
+    // If no types are selected, display a placeholder text
+    if (selectedTypes.length === 0) {
+        return (
+            <div className="w-full lg:w-[50%] flex justify-center items-center">
+                <div className="text-mg font-semibold lg:text-lg lg:font-bold mb-12">
+                    Please select a type to see the results.
+                </div>
+            </div>
+        );
+    }
 
+    return (
         <div className="w-full lg:w-[50%] space-y-8 lg:space-y-12">
             {sortedEffectiveness.map(([key, value]) => (
                 <div key={key}>

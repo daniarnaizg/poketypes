@@ -14,7 +14,7 @@ module.exports = {
         'muk': "url('/assets/muk_bg.webp')",
         'ghast': "url('/assets/ghast_bg.webp')",
         'pokeball': "url('/assets/pokeball_bg.webp')",
-        'poke': "url('/assets/poke_bg.png')",
+        'poke': "url('/assets/poke_bg.webp')",
       })
     },
   },
