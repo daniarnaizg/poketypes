@@ -2,9 +2,10 @@
 
 See it live [here](https://pokemon-types-calculator.vercel.app/).
 
-![GitHub last commit](https://img.shields.io/github/last-commit/daniarnaizg/poketypes)
-![GitHub top language](https://img.shields.io/github/languages/top/daniarnaizg/poketypes)
-![GitHub language count](https://img.shields.io/github/languages/count/daniarnaizg/poketypes)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 
 This is a Pokemon Type Calculator that helps you understand the strengths and weaknesses of different Pokemon types.
 

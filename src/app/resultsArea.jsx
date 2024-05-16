@@ -23,7 +23,7 @@ function ResultsArea({selectedTypes, effectiveness}) {
         <div className="w-full lg:w-[50%] space-y-8 lg:space-y-12">
             {sortedEffectiveness.map(([key, value]) => (
                 <div key={key}>
-                    <div className="text-lg font-bold mb-2">Suffers x{key}:</div>
+                    <div className="text-lg font-bold mb-2"><FormattedMessage id="suffers"/> x{key}:</div>
                     <div className="flex flex-wrap gap-4">
                         {value.map((type) => (<TypeLabel
                             key={type}
