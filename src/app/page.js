@@ -1,6 +1,5 @@
 "use client";
 import React, {useState, useEffect} from 'react';
-import Image from "next/image";
 import {FormattedMessage, IntlProvider} from 'react-intl';
 import en from '../locales/en.json';
 import es from '../locales/es.json';
