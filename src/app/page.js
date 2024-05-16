@@ -15,14 +15,22 @@ const messages = {
 };
 
 export default function Home() {
-    const savedLocale = localStorage.getItem('locale') || 'es';
-    const savedBackground = localStorage.getItem('background') || 'poke';
+    const isClient = typeof window !== 'undefined';
+    const [locale, setLocale] = useState('es');
+    const [background, setBackground] = useState('poke');
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-    const [locale, setLocale] = useState(savedLocale);
-    const [background, setBackground] = useState(savedBackground);
     const [selectedTypes, setSelectedTypes] = useState([]);
     const [effectiveness, setEffectiveness] = useState({});
 
+    // Load locale and background from localStorage
+    useEffect(() => {
+        if (isClient) {
+            const savedLocale = localStorage.getItem('locale') || 'en';
+            const savedBackground = localStorage.getItem('background') || 'poke';
+            setLocale(savedLocale);
+            setBackground(savedBackground);
+        }
+    }, [isClient]);
 
     // Calculate effectiveness when selected types change
     useEffect(() => {
